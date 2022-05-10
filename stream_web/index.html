@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Weasy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="khalil themri">
+    <script src="particles.min.js"></script><link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+<section class="nav">
+    <h1>Stream power</h1>
+    <div class="nav-container">
+        <a class="nav-tab" href="#next">webcam-record</a>
+        <a class="nav-tab" href="#nextnext">Stream</a>
+        <a class="nav-tab" href="#finalnext">audio-record</a>
+        <span class="nav-tab-slider"></span>
+    </div>
+</section>
+
+<main class="main">
+    <section class="slider" id="next">
+        <video autoplay="" id="video" controls width="1200" height="700">
+            <source src="" type=""  >
+        </video>
+        <div class="nav-containerr">
+        <a class="nav-tab" id="start-record" >Start Stream</a>
+        <a class="nav-tab"  id="stop-record" >Stop Stream</a>
+            <a class ="nav-tab" id="download-video" download="test.webm">Download Video</a>
+            <span class="nav-tab-slider"></span>
+        </div>
+    </section>
+    <section class="slider" id="nextnext">
+        <video autoplay class ="video-recording" controls width="1200" height="700">
+            <source src="" type=""  >
+        </video>
+        <div class="nav-containerr">
+            <a class="nav-tab" id="start-recording" >Start Stream</a>
+            <a class="nav-tab"  id="stop-recording" >Stop Stream</a>
+            <a class ="nav-tab" id="download-videoo" download="test.webm">Download Video</a>
+            <span class="nav-tab-slider"></span>
+        </div>
+    </section>
+    <section class="slider" id="finalnext">
+        <audio autoplay class ="audio-recording" controls width="1200" height="700">
+            <source src="" type=""  >
+</audio>
+        <div class="nav-containerr">
+            <a class="nav-tab" id="start-recordin" >Start recording</a>
+            <a class="nav-tab"  id="stop-recordin" >Stop recording</a>
+            <a class ="nav-tab" id="download-audio" download="test.webm">Download audio</a>
+            <span class="nav-tab-slider"></span>
+        </div>
+    </section>
+</main>
+<canvas class="background"></canvas>
+</body>
+<script src='jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
